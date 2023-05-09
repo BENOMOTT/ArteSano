@@ -1,0 +1,165 @@
+
+body{
+    font-family: sans-serif;
+    background-color: #d9d9d9;
+}
+
+
+.header-all {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background-color: #ff0000; 
+    z-index: 999; 
+
+}
+      
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    color: black;
+}
+
+.descripcion{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: black;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+h2{
+    margin-left: 50px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    display: flex;
+    align-items: center;
+}
+
+.carrito{
+    margin-right: 20px;
+}
+
+.agregar{
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+}
+
+.contador{
+float: left;
+margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.container-card{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.card img{
+    transition: all 300ms;
+    background-size: cover;
+}
+
+.card img:hover{
+    transform: scale(1.07);
+    transition: all 300ms;
+}
+
+
+.videos{
+    background-color: rgba(0, 0, 0, 0.848);
+    color: white;
+    border: solid red 10px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 120px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.videos button{
+    margin-top: 170px;
+    margin-left: 10px;
+}
+
+.desc-video{
+    text-align: center;
+}
+
+
+.create{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;  
+    
+}
+
+.btn-group{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.form-label{
+    margin-top: 50px;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: black;
+    padding: 30px;
+    color: white;
+}
+
+footer a{
+    color: white;
+    display: flex;
+    padding: 10px;
+    
+}
+
+.carousel-inner{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.btn{
+    margin-left: 50px;
+}

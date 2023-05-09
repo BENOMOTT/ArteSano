@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte Sano</title>
+</head>
+<body>
+<header class="header-all">
+
+  
+        <div class="logo">
+          <a href="index.html"><img src="logo.png" alt="logo" width="50px" height="50px"></a>
+          <a href="index.html"><h2>Arte Sano</h2></a>
+        </div>
+
+        <nav>
+            <a href="index.html" class="inicio">Inicio</a>
+            <a href="nosotros.html" class="inicio">Sobre Nosotros</a>
+            <a href="" class="inicio">Contacto</a>
+        </nav>
+
+        <div>
+          <p class="contador"></p>
+          <a href="carrito.html"><img src="imagenes/carrito.png" height="50px">
+          <a href="create.html" class="create">Registrarse</a>
+          <a href="login.html" class="create">Iniciar Sesion</a>
+        </div>
+</header>
+
+<br><br><br>
+
+<h1>Carrito de compras</h1>
+    <h3 class="descripcion">A continuacion se mostrara tus objetos seleccionados, jamas compres directamente al artista, compra en la pagina para una
+        compra segura, asi estaras a salvo de cualquier estafa ya que nosotros te devolvemos el dinero!
+    </h3>
+
+    <h4>Resumen del carrito:</h4>
+    <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quo eius blanditiis rerum
+       voluptatibus cum sit mollitia maxime, veniam, ipsa delectus impedit corrupti. Excepturi magni, harum praesentium
+        vitae blanditiis voluptatum!</p>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Pagar!
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">El pago se ha realizado exitosamente!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Muchas gracias por confiar en nosotros! dentro de los proximos 15 minutos reciviras un correo con el comprobante
+        y el arte comprado, disfrutalo!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <a class="btn btn-primary" href="index.html" role="button">Volver al menu</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="contacto">
+  <h2>Contacto</h2>
+  <a href="#">Instagram</a>
+  <a href="#">Facebook</a>
+  <a href="#">+569 64857634</a>
+</div>
+</footer>
+
+
+
+
+
+<script type="text/javascript">
+  var botones = document.querySelectorAll(".agregar");
+  var pElement = document.querySelector(".contador");
+  var contador = 0;
+  botones.forEach(function (boton) {
+    boton.onclick = function () {
+      contador++;
+      pElement.textContent = contador;
+    };
+  });
+</script>
+
+<script>
+  const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
