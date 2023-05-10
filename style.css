@@ -31,6 +31,7 @@ h1{
     color: black;
 }
 
+
 .descripcion{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -41,6 +42,7 @@ h1{
 }
 
 h2{
+    margin-top: 50px;
     margin-left: 50px;
 }
 
@@ -133,13 +135,6 @@ a{
     margin-top: 50px;
 }
 
-
-
-.slide{
-
-}
-
-
 .btn{
     margin-left: 50px;
 }
@@ -157,4 +152,14 @@ footer a{
     display: flex;
     padding: 10px;
     
+}
+
+.maps{
+    text-align: center;
+}
+
+.api1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
