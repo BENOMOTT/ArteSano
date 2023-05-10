@@ -9,27 +9,57 @@
     <title>Arte Sano</title>
 </head>
 <body>
-<header class="header-all">
 
   
-        <div class="logo">
-          <a href="index.html"><img src="logo.png" alt="logo" width="50px" height="50px"></a>
-          <a href="index.html"><h2>Arte Sano</h2></a>
-        </div>
-
-        <nav>
-            <a href="index.html" class="inicio">Inicio</a>
-            <a href="nosotros.html" class="inicio">Sobre Nosotros</a>
-            <a href="" class="inicio">Contacto</a>
+  <div class="container-header">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid header">
+        <nav class="navbar navbar-custom">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="logo.png" width="50" height="50" class="d-inline-block align-text-top">
+              Arte Sano
+            </a>
+          </div>
         </nav>
-
-        <div>
-          <p class="contador"></p>
-          <a href="carrito.html"><img src="imagenes/carrito.png" height="50px">
-          <a href="create.html" class="create">Registrarse</a>
-          <a href="login.html" class="create">Iniciar Sesion</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">¿Quiénes somos?</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorías
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="imagenes.html">Imágenes</a></li>
+                <li><a class="dropdown-item" href="videos.html">Videos</a></li>
+                <li><a class="dropdown-item" href="sonidos.html">Sonidos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create.html">Registrarse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Iniciar Sesión</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success btn-buscar" type="submit">Buscar</button>
+            <p class="contador"></p>
+            <a href="carrito.html"><img src="imagenes/carrito.png" height="50px"></a>
+          </form>
         </div>
-</header>
+      </div>
+    </nav>
+  </div>
 
 <br><br><br>
 
